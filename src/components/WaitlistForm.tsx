@@ -10,6 +10,8 @@ export const HERO_EMAIL_INPUT_ID = "hero-email-input";
 export function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
+  // DEBUG TEMPORAIRE — voir la note dans src/app/api/waitlist/route.ts.
+  const [debug, setDebug] = useState<unknown>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -21,6 +23,8 @@ export function WaitlistForm() {
         body: JSON.stringify({ email }),
       });
       if (!res.ok) throw new Error("request failed");
+      const data = await res.json().catch(() => null);
+      setDebug(data?.sheetDebug ?? null);
       setStatus("success");
     } catch {
       setStatus("error");
@@ -29,9 +33,16 @@ export function WaitlistForm() {
 
   if (status === "success") {
     return (
-      <p className="font-sans text-white">
-        Merci ! Vous êtes sur la liste d&apos;attente.
-      </p>
+      <div>
+        <p className="font-sans text-white">
+          Merci ! Vous êtes sur la liste d&apos;attente.
+        </p>
+        {debug != null && (
+          <pre className="mt-2 max-w-md overflow-auto rounded bg-black/60 p-2 text-left text-xs text-white/80">
+            {JSON.stringify(debug, null, 2)}
+          </pre>
+        )}
+      </div>
     );
   }
 

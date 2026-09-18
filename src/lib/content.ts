@@ -38,7 +38,7 @@ export const faq = [
   {
     question: "Qui est derrière Comptallié ?",
     answer:
-      "Comptallié est une startup française pré-incubée à Sciences Po Paris. Nous construisons une réponse concrète à la pénurie de collaborateurs comptables que traverse la profession, en transformant les agents IA en véritables collaborateurs de cabinet.",
+      "Comptallié est fondée par Hugo Esposito-Farese, diplômé en comptabilité et en poste chez Forvis Mazars (audit et comptabilité internationale), formé aussi à 42 Paris en IA agentique, et par Méline Auduon-Chaboud, à Sciences Po Paris. On combine une vraie connaissance du métier comptable avec une expertise technique en agents IA, pour construire un produit qui colle à la réalité du terrain.",
   },
 ];
 

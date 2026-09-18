@@ -16,18 +16,22 @@ export async function POST(request: Request) {
   // google-apps-script/waitlist.gs et README.md pour la mise en place).
   // Tant que la variable n'est pas configurée, l'email reste seulement
   // loggé ci-dessus.
+  //
+  // En GET (pas POST) : script.google.com/.../exec répond par une
+  // redirection 302 vers script.googleusercontent.com, et fetch() rétrograde
+  // une requête POST en GET en suivant une redirection — doPost ne recevait
+  // donc jamais le corps envoyé. GET n'a pas ce problème.
   const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
   if (webhookUrl) {
     try {
-      const res = await fetch(webhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      if (!res.ok) {
+      const url = `${webhookUrl}?email=${encodeURIComponent(email)}`;
+      const res = await fetch(url);
+      const text = await res.text();
+      if (!res.ok || !text.includes('"ok":true')) {
         console.error(
-          "[waitlist] le Google Sheet a répondu avec une erreur:",
-          res.status
+          "[waitlist] réponse inattendue du Google Sheet:",
+          res.status,
+          text
         );
       }
     } catch (err) {

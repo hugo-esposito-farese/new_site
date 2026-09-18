@@ -42,11 +42,11 @@ Direction artistique adaptée à notre contexte B2B (cabinets comptables) :
   par-dessus la photo.
 - **Personnes souriantes, naturelles**, pas de pose figée façon stock photo
   corporate — un instant capturé, pas un regard caméra.
-- **Présence de l'IA suggérée avec subtilité**, jamais littérale : par
-  exemple un ordinateur portable ouvert avec une interface épurée en
-  arrière-plan, ou simplement l'absence de piles de dossiers/paperasse qui
-  suggère une charge de travail allégée — jamais de robot, de hologramme ou
-  d'imagerie "IA" clichée.
+- **Présence de l'IA : ne pas essayer de la montrer visuellement.** Testé
+  en v2 (écran flou avec interface de chat) → rendu artificiel, cassait la
+  chaleur de l'image (voir section "Retour sur la v2" plus bas). La
+  référence Mirabelle elle-même ne montre pas la techno dans son hero, juste
+  le bénéfice humain. Le texte du site porte l'explication IA, pas l'image.
 - **Rendu photoréaliste**, qualité "photographie éditoriale/lifestyle haut
   de gamme" (type campagne de marque premium B2B), pas de style illustration
   ni 3D stylisé.
@@ -68,7 +68,65 @@ Sciences Po étant rouge sur fond transparent, prévoir un léger fond clair
 (pastille blanche arrondie) derrière le logo pour le contraste, plutôt que
 de le poser tel quel sur le noir.
 
-## Concept retenu (v2)
+## Retour sur la v2 (rejetée par l'utilisateur)
+
+Image générée avec le prompt v2 (client + expert-comptable + écran flou) :
+rendu trop "photo de stock corporate" — lumière neutre/froide au lieu de
+chaleureuse, costumes gris identiques et interchangeables, et l'écran avec
+l'interface de chat a produit un mockup UI visiblement faux/plaqué (blocs
+colorés façon capture d'écran d'app, pas du tout crédible comme arrière-plan
+flou de vraie photo). Résultat : toute la chaleur de la référence Mirabelle
+a disparu. Retour à l'essentiel ci-dessous (v3).
+
+## Concept retenu (v3) — simple, chaleureux, fidèle à la référence
+
+**Constat clé en revoyant la référence** : le hero de Mirabelle n'essaie
+même pas d'expliquer visuellement la techno — il montre juste un moment
+humain sincère et chaleureux (le repas), le produit est presque invisible.
+Le texte du site (voir `content.md`) explique déjà ce qu'est Comptallié ;
+le hero n'a pas à le faire aussi. La v2 a échoué en essayant de caser une
+"interface IA" dans le cadre — c'est précisément ce qui a cassé l'ambiance
+et donné un rendu artificiel.
+
+**v3 reprend donc la formule de la référence à l'identique, juste
+transposée** : lumière dorée de fin de journée, moment humain sincère entre
+deux collaborateurs de cabinet, vêtements décontractés (pas de costume —
+c'est ça qui donnait l'effet "stock photo corporate"), aucun écran, aucune
+tentative de montrer la technologie. Simple et efficace, comme demandé.
+
+**Prompt :**
+
+```
+Warm, intimate editorial lifestyle photograph inside a small, real French
+accounting firm office at the end of the workday — warm wood shelving,
+a few plants, soft clutter of a lived-in workspace, not a glossy corporate
+office. Golden hour light pours through a large window, casting warm
+amber tones across the room. Two colleagues, a man and a woman in their
+30s, stand near the window sharing a genuine laugh over coffee, dressed in
+casual smart clothes — knit sweaters or an open shirt, no suits, no
+blazers, no ties. Candid, natural moment, caught mid-laughter, not posed,
+not looking at the camera. Shallow depth of field, soft warm glow, photo-
+realistic, premium lifestyle editorial photography like a high-end brand
+campaign, shot on a full-frame camera with a 35mm lens, slightly warm film-
+like color grading. Wide cinematic landscape composition, generous
+negative space in the lower-center third of the frame for text overlay. No
+screens, no visible UI, no text, no logos, no watermark anywhere in the
+image.
+```
+
+**Negative prompt :**
+
+```
+suit, blazer, tie, corporate stock photo, cold lighting, fluorescent
+lighting, sterile office, glass office, screen, laptop UI, app mockup,
+futuristic tech, robot, hologram, looking at camera, stiff pose, text,
+watermark, logo, deformed hands, extra fingers
+```
+
+**Paramètres conseillés** : identiques à avant — ratio `16:9`, résolution
+la plus haute disponible (~1920×950px mini).
+
+## Ancien concept (v2, archivé pour mémoire)
 
 **Pourquoi une v2** : la première version ("deux personnes souriantes au
 bureau, golden hour") ne racontait rien de spécifique à Comptallié — elle
@@ -184,7 +242,10 @@ Deux façons de débloquer, au choix de l'utilisateur :
 
 ## Statut
 
-- Image hero : `[À GÉNÉRER]` — prompt prêt ci-dessus, génération bloquée
-  depuis cette session par la politique réseau (voir section précédente).
+- Image hero : `[À GÉNÉRER]` — v2 générée et rejetée par l'utilisateur (trop
+  froide/corporate). **Prompt v3 (section "Concept retenu") à tester** —
+  génération toujours bloquée depuis cette session par la politique réseau
+  (voir section précédente), à faire côté utilisateur via le playground
+  fal.ai.
 - Logos Comptallié et Sciences Po Paris : disponibles dans
   `contexte/logos/`.

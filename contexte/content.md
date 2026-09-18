@@ -37,20 +37,23 @@ Tous les champs sont désormais définitifs.
 ## FAQ (accordéon)
 
 1. **Comment ça marche ?**
-   Nous transformons Claude, l'agent IA d'Anthropic, en collaborateur
-   comptable grâce à des skills, des plugins et des connecteurs MCP
-   construits sur mesure pour votre cabinet. Nous commençons par documenter
-   avec vous vos processus du quotidien — saisie, lettrage, justification,
-   préparation des déclarations, relances clients — puis nous les
-   automatisons pas à pas, sous la supervision de votre expert-comptable.
+   Claude, l'assistant IA d'Anthropic, devient le collaborateur comptable
+   de votre cabinet. On commence par regarder avec vous vos tâches du
+   quotidien — saisie, lettrage, justification des comptes, préparation
+   des déclarations, relances clients — puis on les met en place une par
+   une, toujours sous le contrôle de votre expert-comptable.
 
 2. **Quelles tâches sont automatisées aujourd'hui ?**
-   Nous sommes en phase de lancement, en mode "Wizard of Oz" avec chaque
-   cabinet early adopter : certaines tâches sont déjà exécutées par
-   l'agent, d'autres sont encore accompagnées manuellement le temps de
-   fiabiliser chaque processus à 100 %. Cette approche nous permet de
-   livrer de la valeur dès le premier jour tout en construisant le produit
-   avec vous.
+   Nous sommes encore en tout début de lancement, avec une poignée de
+   cabinets pilotes. Certaines tâches sont déjà prises en charge
+   automatiquement, d'autres sont encore faites à la main le temps de bien
+   les régler avant de les automatiser. Ça nous permet de vous faire
+   gagner du temps dès maintenant, tout en construisant le produit avec
+   vous.
+
+   *(Changement du 18/09 : jargon retiré — "skills/plugins/connecteurs
+   MCP" et "Wizard of Oz" étaient compris en interne mais pas par la
+   cible, des experts-comptables non-tech. Texte en langage courant.)*
 
 3. **Mes données sont-elles en sécurité ?**
    Oui. Vos dossiers comptables et les données de vos clients restent

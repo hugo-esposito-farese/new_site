@@ -22,23 +22,11 @@ export async function POST(request: Request) {
   // une requête POST en GET en suivant une redirection — doPost ne recevait
   // donc jamais le corps envoyé. GET n'a pas ce problème.
   const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
-  // DEBUG TEMPORAIRE : le champ `sheet` est renvoyé au client pour
-  // diagnostiquer pourquoi les emails n'arrivent pas dans le Sheet (pas de
-  // visibilité sur les logs Vercel depuis cette session). À retirer une
-  // fois le problème résolu.
-  let sheetDebug: Record<string, unknown> = {
-    hasWebhookUrl: Boolean(webhookUrl),
-    webhookUrlPreview: webhookUrl
-      ? `${webhookUrl.slice(0, 45)}...${webhookUrl.slice(-10)}`
-      : null,
-  };
-
   if (webhookUrl) {
     try {
       const url = `${webhookUrl}?email=${encodeURIComponent(email)}`;
       const res = await fetch(url);
       const text = await res.text();
-      sheetDebug = { ...sheetDebug, status: res.status, body: text.slice(0, 300) };
       if (!res.ok || !text.includes('"ok":true')) {
         console.error(
           "[waitlist] réponse inattendue du Google Sheet:",
@@ -47,10 +35,6 @@ export async function POST(request: Request) {
         );
       }
     } catch (err) {
-      sheetDebug = {
-        ...sheetDebug,
-        error: err instanceof Error ? err.message : String(err),
-      };
       console.error("[waitlist] échec de l'envoi vers le Google Sheet:", err);
     }
   } else {
@@ -59,5 +43,5 @@ export async function POST(request: Request) {
     );
   }
 
-  return NextResponse.json({ ok: true, sheetDebug });
+  return NextResponse.json({ ok: true });
 }

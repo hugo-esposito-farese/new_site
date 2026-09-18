@@ -181,6 +181,97 @@ deformed hands, extra fingers
 **Paramètres conseillés** : ratio `16:9`, résolution la plus haute
 disponible (~1920×950px mini).
 
+## Retour sur la v4 (bon équilibre, mais bas de l'image surchargé)
+
+Image v4 générée : chaleur + contexte de bureau enfin réunis (écran, lampe,
+classeurs sur étagère en bois) sans retomber dans le corporate froid. Reste
+un problème : le bas du cadre (là où se pose le headline/sous-titre/
+formulaire) est net et chargé (boîtes, papiers, écran), pas assez calme
+pour accueillir du texte blanc.
+
+**Analyse détaillée de l'effet repéré sur la référence** (capture
+`screenshots/01-hero.webp`) : deux effets superposés, pas un seul.
+
+1. **Vignettage sombre asymétrique** : le premier plan (bord de la table en
+   bois, tout en bas de l'image, là où le texte est posé) est nettement
+   sous-exposé, presque noir, alors que l'arrière-plan (fenêtre, étagère)
+   reste lumineux. Ce n'est pas un cadrage naturel — le bas de l'image est
+   délibérément assombri pour que le texte blanc s'y détache sans effort.
+2. **Grain filmique fin** : visible surtout dans les zones sombres (mur,
+   pulls, table) — un vrai grain analogique texturé, pas du bruit numérique
+   propre. Look "pellicule" (type Kodak Portra), pas "photo de smartphone".
+
+**Limite à connaître** : un modèle de diffusion (FLUX) peut suggérer un
+vignettage et un grain dans le prompt, mais ne reproduira jamais un
+vignettage *localisé exactement où le texte doit aller* de façon fiable et
+reproductible — il ne "sait" pas où sera le texte HTML par-dessus. La bonne
+pratique (et la plus fiable) est de **combiner** : demander l'ambiance et le
+grain dans le prompt de génération (v5 ci-dessous) **et** appliquer un
+dégradé sombre + un léger grain en CSS au moment de l'intégration (overlay
+`linear-gradient` noir en bas de l'image + `background-blend-mode` ou une
+texture de bruit en `mix-blend-mode: overlay`) — c'est ce qui garantit que
+le texte reste lisible quel que soit le rendu exact de l'image générée.
+
+## Concept final (v5) — v4 + grain filmique + espace texte dégagé
+
+**Changements vs v4** :
+- Le premier plan / tiers inférieur du cadre est explicitement décrit comme
+  simple, sombre et dégagé (bord de bureau en bois, hors focus, sans objet)
+  — les éléments chargés (écran, classeurs, papiers) sont repoussés dans le
+  tiers supérieur/central de l'image, jamais dans le tiers inférieur.
+- Ajout du grain filmique et du vignettage directement dans le prompt
+  (langage de photographie analogique que FLUX comprend bien : "Kodak
+  Portra 400", "visible film grain", "vignette").
+
+**Prompt :**
+
+```
+Warm, intimate editorial lifestyle photograph inside a real French
+accounting firm office at the end of the workday, shot on Kodak Portra 400
+film with visible fine film grain and a natural vignette darkening the
+lower third and edges of the frame. In the middle and upper part of the
+frame: a proper office desk with a computer monitor (screen off, not the
+focus), neat rows of binders and files on open shelving behind, a desk
+lamp, a small plant — clearly a professional accounting workspace, not a
+living room. The bottom third of the frame is a simple, softly out-of-
+focus, darker wooden desk edge with nothing on it — calm and uncluttered,
+deliberately underexposed like a natural vignette, leaving clean empty
+space for text to be placed on top later. Golden hour light pours through
+a large office window behind the desk, casting warm amber tones across the
+upper half of the room. Two colleagues, a man and a woman in their 30s,
+stand near the desk in the middle of the frame sharing a genuine warm
+laugh over coffee, dressed in smart business-casual attire — a crisp shirt
+or blouse, an open cardigan or unbuttoned blazer, no tie, nothing stiff or
+corporate-stock-photo posed. Candid, natural moment, caught mid-laughter,
+not looking at the camera. Shallow depth of field, soft warm glow,
+photorealistic, premium lifestyle editorial photography like a high-end
+brand campaign, shot on a full-frame camera with a 35mm lens. Wide
+cinematic landscape composition. No visible screen content, no text, no
+logos, no watermark anywhere in the image.
+```
+
+**Negative prompt :**
+
+```
+living room, home apartment, bedroom, candles, wine bottles, sofa, suit,
+full formal corporate stock photo, cold lighting, fluorescent lighting,
+sterile office, looking at camera, stiff pose, clean digital sharpness, no
+grain, flat lighting, oversaturated, HDR, cluttered foreground, busy
+bottom of frame, text, watermark, logo, deformed hands, extra fingers
+```
+
+**Paramètres conseillés** : ratio `16:9`, résolution la plus haute
+disponible (~1920×950px mini).
+
+**À faire en plus, côté intégration (CSS), quel que soit le résultat de la
+génération** : superposer un dégradé `linear-gradient(to bottom, transparent
+0%, rgba(0,0,0,0.55) 100%)` sur le tiers inférieur de l'image derrière le
+texte, et éventuellement une texture de grain léger en `mix-blend-mode:
+overlay` sur toute l'image pour renforcer l'effet pellicule de façon
+garantie et cohérente sur toutes les générations/tailles d'écran — c'est
+la méthode la plus fiable pour la lisibilité du texte, indépendamment de ce
+que produit exactement le modèle d'image.
+
 ## Ancien concept (v2, archivé pour mémoire)
 
 **Pourquoi une v2** : la première version ("deux personnes souriantes au
@@ -299,9 +390,11 @@ Deux façons de débloquer, au choix de l'utilisateur :
 
 - Image hero : `[À GÉNÉRER]` — v2 rejetée (trop froide/corporate), v3
   rejetée (chaleur retrouvée mais plus aucun contexte de bureau
-  reconnaissable). **Prompt v4 (section "Concept retenu (v4)") à tester** —
-  génération toujours bloquée depuis cette session par la politique réseau
-  (voir section précédente), à faire côté utilisateur via le playground
-  fal.ai.
+  reconnaissable), v4 bon équilibre mais bas de cadre trop chargé pour le
+  texte. **Prompt v5 (section "Concept final (v5)") à tester** — génération
+  toujours bloquée depuis cette session par la politique réseau (voir
+  section précédente), à faire côté utilisateur via le playground fal.ai.
+  Ne pas oublier le dégradé CSS + grain en overlay à l'intégration, quel
+  que soit le résultat de la v5.
 - Logos Comptallié et Sciences Po Paris : disponibles dans
   `contexte/logos/`.

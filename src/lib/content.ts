@@ -18,7 +18,7 @@ export const faq = [
   {
     question: "Comment ça marche ?",
     answer:
-      "Claude, l'assistant IA d'Anthropic, devient le collaborateur comptable de votre cabinet. On commence par regarder avec vous vos tâches du quotidien — saisie, lettrage, justification des comptes, préparation des déclarations, relances clients — puis on les met en place une par une, toujours sous le contrôle de votre expert-comptable.",
+      "Comptallié devient le collaborateur comptable de votre cabinet. On commence par regarder avec vous vos tâches du quotidien — saisie, lettrage, justification des comptes, préparation des déclarations, relances clients — puis on les met en place une par une, toujours sous le contrôle de votre expert-comptable.",
   },
   {
     question: "Quelles tâches sont automatisées aujourd'hui ?",

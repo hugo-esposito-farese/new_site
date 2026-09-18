@@ -37,11 +37,18 @@ Tous les champs sont désormais définitifs.
 ## FAQ (accordéon)
 
 1. **Comment ça marche ?**
-   Claude, l'assistant IA d'Anthropic, devient le collaborateur comptable
-   de votre cabinet. On commence par regarder avec vous vos tâches du
-   quotidien — saisie, lettrage, justification des comptes, préparation
-   des déclarations, relances clients — puis on les met en place une par
-   une, toujours sous le contrôle de votre expert-comptable.
+   Comptallié devient le collaborateur comptable de votre cabinet. On
+   commence par regarder avec vous vos tâches du quotidien — saisie,
+   lettrage, justification des comptes, préparation des déclarations,
+   relances clients — puis on les met en place une par une, toujours sous
+   le contrôle de votre expert-comptable.
+
+   *(Changement du 18/09 : plus de mention explicite de "Claude" /
+   "Anthropic" sur le site public — nommer la techno sous-jacente donne
+   l'impression d'être un intégrateur qui plaque un outil tiers plutôt
+   qu'une startup avec son propre produit. En interne/technique, la
+   techno reste bien Claude via skills/plugins/connecteurs MCP — voir
+   claude.md — seul le texte visiteur change.)*
 
 2. **Quelles tâches sont automatisées aujourd'hui ?**
    Nous sommes encore en tout début de lancement, avec une poignée de

@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Comptallié — Votre collaborateur comptable IA",
   description:
-    "La pénurie de comptables ne doit plus freiner votre cabinet. Comptallié transforme Claude en collaborateur comptable pour les cabinets français.",
+    "La pénurie de comptables ne doit plus freiner votre cabinet. Comptallié met un collaborateur comptable IA au service des cabinets français.",
   openGraph: {
     title: "Comptallié — Votre collaborateur comptable IA",
     description:

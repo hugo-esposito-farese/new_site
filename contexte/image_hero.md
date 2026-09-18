@@ -126,6 +126,61 @@ watermark, logo, deformed hands, extra fingers
 **Paramètres conseillés** : identiques à avant — ratio `16:9`, résolution
 la plus haute disponible (~1920×950px mini).
 
+## Retour sur la v3 (chaleur retrouvée, mais contexte pro perdu)
+
+Image v3 générée : la chaleur/complicité de la référence est enfin là
+(lumière dorée, rire sincère, café). Mais remarque clé de l'utilisateur :
+sans costume ET sans aucun élément de bureau visible (étagère à livres,
+radiateur, bougies/bouteilles sur le rebord de fenêtre), la scène se lit
+comme un appartement, pas comme un cabinet comptable — les vrais clients
+(experts-comptables) ne s'y reconnaîtraient pas. Le costume n'était pas le
+vrai problème en v2 (c'était la lumière froide + l'écran factice) ; le
+retirer sans rien remettre à la place a fait perdre tout contexte pro.
+
+## Concept retenu (v4) — chaleur + contexte de bureau reconnaissable
+
+**Principe** : garder tout ce qui a marché en v3 (lumière dorée, moment
+candide, complicité sincère, pas de costume rigide), mais ancrer la scène
+dans un vrai bureau de cabinet — bureau, écran d'ordinateur, dossiers/
+classeurs — et habiller les deux personnes en tenue "business casual"
+(chemise/chemisier, cardigan ou blazer ouvert, sans cravate) plutôt qu'en
+pull décontracté façon week-end. C'est le décor de bureau qui rend la scène
+reconnaissable pour la cible, pas le costume.
+
+**Prompt :**
+
+```
+Warm, intimate editorial lifestyle photograph inside a real French
+accounting firm office at the end of the workday. In the frame: a proper
+office desk with a computer monitor (screen off or turned away, not the
+focus), neat rows of binders and files on open shelving behind, a desk
+lamp, a small plant — clearly a professional accounting workspace, not a
+living room. Golden hour light pours through a large office window,
+casting warm amber tones across the room. Two colleagues, a man and a
+woman in their 30s, stand near the desk sharing a genuine warm laugh over
+coffee, dressed in smart business-casual attire — a crisp shirt or blouse,
+an open cardigan or unbuttoned blazer, no tie, nothing stiff or corporate-
+stock-photo posed. Candid, natural moment, caught mid-laughter, not looking
+at the camera. Shallow depth of field, soft warm glow, photorealistic,
+premium lifestyle editorial photography like a high-end brand campaign,
+shot on a full-frame camera with a 35mm lens, slightly warm film-like color
+grading. Wide cinematic landscape composition, generous negative space in
+the lower-center third of the frame for text overlay. No visible screen
+content, no text, no logos, no watermark anywhere in the image.
+```
+
+**Negative prompt :**
+
+```
+living room, home apartment, bedroom, candles, wine bottles, sofa, suit,
+full formal corporate stock photo, cold lighting, fluorescent lighting,
+sterile office, looking at camera, stiff pose, text, watermark, logo,
+deformed hands, extra fingers
+```
+
+**Paramètres conseillés** : ratio `16:9`, résolution la plus haute
+disponible (~1920×950px mini).
+
 ## Ancien concept (v2, archivé pour mémoire)
 
 **Pourquoi une v2** : la première version ("deux personnes souriantes au
@@ -242,8 +297,9 @@ Deux façons de débloquer, au choix de l'utilisateur :
 
 ## Statut
 
-- Image hero : `[À GÉNÉRER]` — v2 générée et rejetée par l'utilisateur (trop
-  froide/corporate). **Prompt v3 (section "Concept retenu") à tester** —
+- Image hero : `[À GÉNÉRER]` — v2 rejetée (trop froide/corporate), v3
+  rejetée (chaleur retrouvée mais plus aucun contexte de bureau
+  reconnaissable). **Prompt v4 (section "Concept retenu (v4)") à tester** —
   génération toujours bloquée depuis cette session par la politique réseau
   (voir section précédente), à faire côté utilisateur via le playground
   fal.ai.

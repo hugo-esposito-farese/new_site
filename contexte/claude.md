@@ -57,11 +57,9 @@ des early adopters, étape par étape").
   accroche + FAQ + footer), rédigé à partir du contexte startup ci-dessus,
   à insérer dans la structure décrite par `reference.md`. Marque :
   **Comptallié**.
-- `image_hero.md` — brief pour générer (avec une IA d'images) l'image de
-  fond de la section hero, dans le même esprit que celle du site de
-  référence (photo lifestyle, chaude, mettant en scène l'usage du produit),
-  adaptée à un contexte de cabinet comptable français. Référence aussi les
-  logos disponibles pour le badge du footer.
+- `image_hero.md` — historique de génération de l'image hero (5 itérations)
+  et brief final. **Image hero validée : `contexte/hero/hero-final.jpg`.**
+  Référence aussi les logos disponibles pour le badge du footer.
 - `screenshots/` — captures d'écran du site de référence (Mirabelle,
   meetmirabelle.com), dans l'ordre du scroll :
   - `01-hero.webp`
@@ -80,7 +78,8 @@ Le même site que la référence, "idem" niveau structure : une landing page
 one-page composée, dans cet ordre, de :
 
 1. **Hero plein écran** avec image de fond (photo lifestyle générée par IA,
-   cf. `image_hero.md`), logo centré en haut, grand titre serif italique,
+   validée : `contexte/hero/hero-final.jpg`, historique dans
+   `image_hero.md`), logo centré en haut, grand titre serif italique,
    sous-titre, formulaire email + bouton CTA "rejoindre la liste d'attente".
 2. **Bloc d'accroche** : paragraphe éditorial qui explique ce que fait le
    produit et le bénéfice pour l'utilisateur.
@@ -97,13 +96,15 @@ colonne centrée, beaucoup d'espace négatif, design minimal.
 
 ## Prochaines étapes
 
-1. Générer l'image hero via le brief de `image_hero.md`.
-2. Choisir une stack technique (non définie pour l'instant — à discuter au
+1. Choisir une stack technique (non définie pour l'instant — à discuter au
    moment de l'implémentation) et construire le site en suivant
    `reference.md` comme spec structurelle/visuelle, `content.md` comme
-   source de contenu définitive, et `logos/` pour l'identité visuelle.
+   source de contenu définitive, `logos/` pour l'identité visuelle, et
+   `hero/hero-final.jpg` comme image de fond du hero.
+2. À l'intégration : appliquer le dégradé CSS + léger grain prévus dans
+   `image_hero.md` derrière le texte du hero pour garantir sa lisibilité.
 
 **En résumé : `reference.md` = la structure et le style à copier fidèlement,
-`content.md` = le texte définitif à insérer dedans, `image_hero.md` = le
-brief de l'image hero, `logos/` = les logos réels (Comptallié + Sciences Po
-Paris).**
+`content.md` = le texte définitif à insérer dedans, `hero/hero-final.jpg` =
+l'image hero validée (historique dans `image_hero.md`), `logos/` = les
+logos réels (Comptallié + Sciences Po Paris).**

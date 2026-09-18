@@ -388,13 +388,15 @@ Deux façons de débloquer, au choix de l'utilisateur :
 
 ## Statut
 
-- Image hero : `[À GÉNÉRER]` — v2 rejetée (trop froide/corporate), v3
-  rejetée (chaleur retrouvée mais plus aucun contexte de bureau
-  reconnaissable), v4 bon équilibre mais bas de cadre trop chargé pour le
-  texte. **Prompt v5 (section "Concept final (v5)") à tester** — génération
-  toujours bloquée depuis cette session par la politique réseau (voir
-  section précédente), à faire côté utilisateur via le playground fal.ai.
-  Ne pas oublier le dégradé CSS + grain en overlay à l'intégration, quel
-  que soit le résultat de la v5.
+- **Image hero : VALIDÉE ✅** — générée avec le prompt v5, fichier final :
+  `contexte/hero/hero-final.jpg` (2000×1116, ratio 16:9). Historique des
+  itérations rejetées ci-dessus (v2 trop froide/corporate, v3 chaleureuse
+  mais sans contexte de bureau, v4 bon équilibre mais bas de cadre trop
+  chargé) conservé pour mémoire, plus besoin de régénérer.
+- **Reste à faire à l'intégration** : appliquer le dégradé CSS noir sur le
+  tiers inférieur (+ éventuellement un léger grain en `mix-blend-mode:
+  overlay`) derrière le texte du hero, comme prévu dans la section
+  "Concept final (v5)" — l'image seule ne garantit pas la lisibilité du
+  texte à toutes les tailles d'écran.
 - Logos Comptallié et Sciences Po Paris : disponibles dans
   `contexte/logos/`.

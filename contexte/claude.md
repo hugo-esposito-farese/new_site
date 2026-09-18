@@ -53,21 +53,26 @@ des early adopters, étape par étape").
   `screenshots/`). C'est le document à suivre en priorité pour l'implémentation
   visuelle et structurelle. Ce fichier décrit le site de référence **tel
   quel**, sans adaptation — c'est `content.md` qui porte notre propre texte.
-- `content.md` — le texte réel de ma landing page (hero + accroche + FAQ +
-  footer), rédigé à partir du contexte startup ci-dessus, à insérer dans la
-  structure décrite par `reference.md`. Il ne reste que trois champs en
-  attente : nom de la startup, logo, email de contact (`[NOM_STARTUP]` /
-  `[LOGO]` / `[EMAIL]`).
+- `content.md` — le texte réel et définitif de ma landing page (hero +
+  accroche + FAQ + footer), rédigé à partir du contexte startup ci-dessus,
+  à insérer dans la structure décrite par `reference.md`. Marque :
+  **Comptallié**.
 - `image_hero.md` — brief pour générer (avec une IA d'images) l'image de
   fond de la section hero, dans le même esprit que celle du site de
   référence (photo lifestyle, chaude, mettant en scène l'usage du produit),
-  adaptée à un contexte de cabinet comptable français. Contient aussi le
-  sourcing du logo Sciences Po Paris pour le badge du footer.
+  adaptée à un contexte de cabinet comptable français. Référence aussi les
+  logos disponibles pour le badge du footer.
 - `screenshots/` — captures d'écran du site de référence (Mirabelle,
   meetmirabelle.com), dans l'ordre du scroll :
   - `01-hero.webp`
   - `02-value-faq.png`
   - `03-faq-footer.png`
+- `logos/` — identité visuelle réelle :
+  - `comptallie-logo.png` — logo Comptallié (icône monoligne blanche sur
+    fond noir).
+  - `sciences-po-logo.png` — wordmark officiel Sciences Po Paris (fourni
+    par l'utilisateur), pour le badge "Pré-incubée à Sciences Po Paris" du
+    footer.
 
 ## Ce que je veux exactement
 
@@ -92,17 +97,13 @@ colonne centrée, beaucoup d'espace négatif, design minimal.
 
 ## Prochaines étapes
 
-1. Récupérer nom / logo / email auprès de l'utilisateur pour compléter les
-   trois champs restants de `content.md`.
-2. Récupérer le fichier logo officiel de Sciences Po Paris (sourcing dans
-   `image_hero.md` — pas téléchargeable automatiquement depuis cette
-   session, accès réseau restreint).
-3. Générer l'image hero via le brief de `image_hero.md`.
-4. Choisir une stack technique (non définie pour l'instant — à discuter au
+1. Générer l'image hero via le brief de `image_hero.md`.
+2. Choisir une stack technique (non définie pour l'instant — à discuter au
    moment de l'implémentation) et construire le site en suivant
-   `reference.md` comme spec structurelle/visuelle et `content.md` comme
-   source de contenu définitive.
+   `reference.md` comme spec structurelle/visuelle, `content.md` comme
+   source de contenu définitive, et `logos/` pour l'identité visuelle.
 
 **En résumé : `reference.md` = la structure et le style à copier fidèlement,
 `content.md` = le texte définitif à insérer dedans, `image_hero.md` = le
-brief de l'image hero + sourcing du logo Sciences Po.**
+brief de l'image hero, `logos/` = les logos réels (Comptallié + Sciences Po
+Paris).**

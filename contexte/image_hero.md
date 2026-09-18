@@ -53,35 +53,24 @@ Direction artistique adaptée à notre contexte B2B (cabinets comptables) :
 - **Palette cohérente** avec le reste du site : tons chauds/naturels (bois,
   lumière ambrée) qui se marient avec le fond crème du reste de la page.
 
-## Logo Sciences Po Paris (footer)
+## Logos disponibles
+
+- **Comptallié** : `contexte/logos/comptallie-logo.png` — icône monoligne
+  blanche sur fond noir.
+- **Sciences Po Paris** : `contexte/logos/sciences-po-logo.png` — wordmark
+  officiel rouge (fourni par l'utilisateur, fond transparent).
 
 Sur le site de référence, le badge du bas est "Backed by Y Combinator" (logo
 + texte). Pour notre site, il devient **"Pré-incubée à Sciences Po Paris"**
-avec le logo officiel de Sciences Po à la place du logo Y Combinator (cf.
-`content.md`, section Footer).
-
-Sources officielles identifiées pour le fichier logo (non téléchargées
-automatiquement — l'accès réseau de cette session est restreint à une
-allowlist qui exclut ces domaines) :
-
-- Page presse officielle Sciences Po (logo FR) :
-  `https://newsroom.sciencespo.fr/logo-fr`
-- Fichier vectoriel sur Wikimedia Commons (logo institutionnel Sciences Po,
-  format SVG) :
-  `https://commons.wikimedia.org/wiki/File:Logo_Sciences_Po.svg`
-
-**Action manuelle nécessaire avant mise en prod** : télécharger le logo
-depuis l'une de ces deux sources (privilégier le kit presse officiel
-`newsroom.sciencespo.fr` qui donne les conditions d'usage exactes de la
-marque), le placer dans `contexte/screenshots/logo-sciences-po.svg` (ou
-`.png`), et vérifier les règles d'usage de la marque Sciences Po (taille
-minimale, zone de protection, contexte d'usage autorisé pour un badge de
-type "pré-incubé par") avant publication du site.
+avec `sciences-po-logo.png` à la place du logo Y Combinator (cf.
+`content.md`, section Footer). Le footer étant à fond noir et le wordmark
+Sciences Po étant rouge sur fond transparent, prévoir un léger fond clair
+(pastille blanche arrondie) derrière le logo pour le contraste, plutôt que
+de le poser tel quel sur le noir.
 
 ## Statut
 
-- Image hero : `[À GÉNÉRER]` — à produire une fois le nom/identité visuelle
-  de la startup connus (voir `content.md`), en suivant le brief ci-dessus.
-- Logo Sciences Po Paris : `[À TÉLÉCHARGER MANUELLEMENT]` — sources
-  identifiées ci-dessus, téléchargement à faire depuis un environnement
-  avec accès web complet.
+- Image hero : `[À GÉNÉRER]` — à produire en suivant le brief ci-dessus,
+  maintenant que l'identité de marque (Comptallié) est connue.
+- Logos Comptallié et Sciences Po Paris : disponibles dans
+  `contexte/logos/`.

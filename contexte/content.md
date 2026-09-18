@@ -4,17 +4,19 @@ Texte réel de la landing page, rédigé à partir du contexte startup (voir
 `claude.md`), en suivant exactement les emplacements décrits dans
 `reference.md`.
 
-> ⚠️ Trois champs restent en attente — **nom de la startup, logo, email de
-> contact** — que l'utilisateur va fournir. Ils sont marqués
-> `[NOM_STARTUP]` / `[LOGO]` / `[EMAIL]` ci-dessous. Tout le reste du texte
-> est le texte définitif à utiliser tel quel.
+Tous les champs sont désormais définitifs.
 
 ---
 
 ## Logo (haut du hero)
 
-- Nom de la marque : `[NOM_STARTUP]`
-- Icône du logo : `[LOGO]`
+- Nom de la marque : **Comptallié**
+- Icône du logo : fichier `contexte/logos/comptallie-logo.png` — icône
+  monoligne blanche sur fond noir (organigramme/réseau de nœuds reliés,
+  évoquant collaborateur + processus). Sur le hero, à afficher en blanc à
+  côté/au-dessus du wordmark "Comptallié", dans le même style que le
+  couple icône + wordmark de la référence (petit, centré, en haut de
+  l'image).
 
 ## Hero
 
@@ -62,28 +64,40 @@ Texte réel de la landing page, rédigé à partir du contexte startup (voir
    liste d'attente pour faire partie des premiers cabinets accompagnés
    lors de notre prochaine vague d'onboarding.
 
-5. **Qui est derrière `[NOM_STARTUP]` ?**
-   `[NOM_STARTUP]` est une startup française pré-incubée à Sciences Po
-   Paris. Nous construisons une réponse concrète à la pénurie de
-   collaborateurs comptables que traverse la profession, en transformant
-   les agents IA en véritables collaborateurs de cabinet.
+5. **Qui est derrière Comptallié ?**
+   Comptallié est une startup française pré-incubée à Sciences Po Paris.
+   Nous construisons une réponse concrète à la pénurie de collaborateurs
+   comptables que traverse la profession, en transformant les agents IA en
+   véritables collaborateurs de cabinet.
 
 CTA après la FAQ : `Rejoindre la liste d'attente →` (identique au bouton du
 hero).
 
 ## Footer
 
-- Handle social principal (gras, en haut du footer) : `@[NOM_STARTUP]`
-- Lien "Contact" : `Contact` → `mailto:[EMAIL]`
+- Handle social principal (gras, en haut du footer) : `@comptallie`
+  *(à confirmer si le handle exact des réseaux sociaux diffère — dérivé du
+  nom de marque par défaut)*.
+- Lien "Contact" : `Contact` → `mailto:hugo.esposito.farese.pro@gmail.com`
+  *(email du fondateur, à remplacer par une adresse `contact@comptallie.fr`
+  dès qu'un domaine/boîte mail dédiée existe)*.
 - **Badge** (remplace le "Backed by Y Combinator" de la référence) :
-  **Pré-incubée à Sciences Po Paris**, avec le logo Sciences Po à la place
-  du logo YC. Voir `image_hero.md` (section "Logo Sciences Po") pour le
-  sourcing du fichier — non téléchargé automatiquement pour l'instant
-  (accès réseau restreint dans cette session), à récupérer manuellement
-  avant mise en prod.
+  **Pré-incubée à Sciences Po Paris**, avec le logo Sciences Po Paris
+  (fichier `contexte/logos/sciences-po-logo.png` — wordmark rouge officiel
+  sur fond transparent/blanc) à la place du logo YC. Comme le fond du
+  footer est noir, prévoir soit une variante blanche/monochrome du
+  wordmark Sciences Po pour le contraste, soit un badge avec fond clair
+  autour du logo (pastille blanche) plutôt que le rouge directement sur
+  noir — à trancher au moment de l'intégration visuelle.
 - Liens réseaux sociaux : pour un produit B2B destiné aux cabinets
   comptables, LinkedIn et X sont les canaux prioritaires. Instagram/TikTok
   n'ont pas de valeur évidente ici — à garder uniquement si la startup y est
   déjà active, sinon les retirer et ne garder que :
   - `LinkedIn` → `[URL]`
   - `X` → `[URL]`
+
+## Contact institutionnel (pas affiché sur la LP)
+
+- Référente Sciences Po Paris (programme de pré-incubation) :
+  `meline.auduonchaboud@sciencespo.fr` — contact interne/institutionnel,
+  pas destiné à apparaître publiquement sur la landing page.

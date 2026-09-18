@@ -42,8 +42,11 @@ export const faq = [
   },
 ];
 
-// TODO: URLs réelles à renseigner dès qu'elles existent (voir contexte/content.md).
+// TODO: URL X réelle à renseigner dès qu'elle existe (voir contexte/content.md).
 export const socialLinks = [
-  { label: "LinkedIn", href: "#" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/comptalli%C3%A9/posts/?viewAsMember=true",
+  },
   { label: "X", href: "#" },
 ];

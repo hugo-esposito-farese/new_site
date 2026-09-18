@@ -26,15 +26,15 @@ export function Hero() {
       />
 
       <div className="relative z-10 flex justify-center pt-10">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <Image
             src="/logo-comptallie.png"
             alt=""
-            width={22}
-            height={22}
+            width={34}
+            height={34}
             className="opacity-95"
           />
-          <span className="font-sans text-lg font-medium text-white">
+          <span className="font-sans text-2xl font-medium text-white">
             {brand.name}
           </span>
         </div>

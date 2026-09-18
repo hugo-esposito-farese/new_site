@@ -96,8 +96,13 @@ hero).
   - `LinkedIn` → `[URL]`
   - `X` → `[URL]`
 
-## Contact institutionnel (pas affiché sur la LP)
+## Équipe fondatrice (pas affiché sur la LP)
 
-- Référente Sciences Po Paris (programme de pré-incubation) :
-  `meline.auduonchaboud@sciencespo.fr` — contact interne/institutionnel,
-  pas destiné à apparaître publiquement sur la landing page.
+- Hugo (cofondateur) : `hugo.esposito.farese.pro@gmail.com` — email utilisé
+  pour le lien "Contact" du footer.
+- Méline Auduon-Chaboud (cofondatrice) : `meline.auduonchaboud@sciencespo.fr`
+  — email @sciencespo.fr car elle est cofondatrice de Comptallié via le
+  programme de pré-incubation Sciences Po Paris, pas une référente externe.
+  Ne remplace pas l'email du lien "Contact" pour l'instant (un seul email
+  affiché sur la LP), mais à retenir pour toute mention future de l'équipe
+  fondatrice sur le site.

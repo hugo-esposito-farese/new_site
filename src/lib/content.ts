@@ -38,7 +38,7 @@ export const faq = [
   {
     question: "Qui est derrière Comptallié ?",
     answer:
-      "Comptallié est fondée par Hugo Esposito-Farese, diplômé en comptabilité et en poste chez Forvis Mazars (audit et comptabilité internationale), formé aussi à 42 Paris en IA agentique, et par Méline Auduon-Chaboud, à Sciences Po Paris. On combine une vraie connaissance du métier comptable avec une expertise technique en agents IA, pour construire un produit qui colle à la réalité du terrain.",
+      "On est deux : Hugo, comptable de formation et passé par 42 Paris pour se spécialiser en IA agentique, et Méline, à Sciences Po Paris. On connaît le métier comptable de l'intérieur, et on sait construire des agents IA qui tiennent vraiment la route sur le terrain.",
   },
 ];
 

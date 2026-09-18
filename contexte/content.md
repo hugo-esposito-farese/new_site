@@ -65,18 +65,19 @@ Tous les champs sont désormais définitifs.
    lors de notre prochaine vague d'onboarding.
 
 5. **Qui est derrière Comptallié ?**
-   Comptallié est fondée par Hugo Esposito-Farese, diplômé en comptabilité
-   et en poste chez Forvis Mazars (audit et comptabilité internationale),
-   formé aussi à 42 Paris en IA agentique, et par Méline Auduon-Chaboud, à
-   Sciences Po Paris. On combine une vraie connaissance du métier comptable
-   avec une expertise technique en agents IA, pour construire un produit
-   qui colle à la réalité du terrain.
+   On est deux : Hugo, comptable de formation et passé par 42 Paris pour se
+   spécialiser en IA agentique, et Méline, à Sciences Po Paris. On connaît
+   le métier comptable de l'intérieur, et on sait construire des agents IA
+   qui tiennent vraiment la route sur le terrain.
 
    *(Changement du 18/09 : on ne présente plus Comptallié comme
    "pré-incubée à Sciences Po Paris" — ce n'est pas l'identité de la
-   startup, seulement le parcours d'une des deux fondatrices. Le badge
-   footer "Pré-incubée à Sciences Po Paris" reste inchangé pour l'instant,
-   voir section Footer ci-dessous — à confirmer si ça doit aussi changer.)*
+   startup, seulement le parcours d'une des deux fondatrices. Texte
+   volontairement simple/court, sur le modèle des réponses FAQ de la
+   référence — pas un CV. Ne pas mentionner Forvis Mazars : Hugo n'y
+   travaille plus. Le badge footer "Pré-incubée à Sciences Po Paris" reste
+   inchangé pour l'instant — l'utilisateur sait qu'il faudra itérer dessus,
+   à traiter dans un prochain prompt.)*
 
 CTA après la FAQ : `Rejoindre la liste d'attente →` (identique au bouton du
 hero).

@@ -12,13 +12,13 @@ export const hero = {
 };
 
 export const valueProp =
-  "Donnez-lui vos pièces comptables. Il saisit, lettre, justifie et prépare vos déclarations, pour que votre cabinet tienne ses délais sans surcharger vos équipes — et que vos collaborateurs retrouvent du temps pour le conseil et vos clients.";
+  "Donnez-lui vos pièces comptables. Votre collaborateur IA saisit, lettre, justifie et prépare vos déclarations, pour que votre cabinet tienne ses délais sans surcharger vos équipes — et que vos collaborateurs retrouvent du temps pour le conseil et vos clients.";
 
 export const faq = [
   {
     question: "Comment ça marche ?",
     answer:
-      "Comptallié devient le collaborateur comptable de votre cabinet. On commence par regarder avec vous vos tâches du quotidien — saisie, lettrage, justification des comptes, préparation des déclarations, relances clients — puis on les met en place une par une, toujours sous le contrôle de votre expert-comptable.",
+      "Comptallié développe un agent IA capable de faire tout ce que fait aujourd'hui un collaborateur comptable dans un cabinet français : saisir les pièces, lettrer les comptes, justifier les soldes, préparer les déclarations de TVA et les liasses, relancer les clients pour les pièces manquantes. On le construit avec vous, à partir de vos dossiers réels, toujours sous le contrôle de votre expert-comptable.",
   },
   {
     question: "Quelles tâches sont automatisées aujourd'hui ?",

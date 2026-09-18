@@ -29,26 +29,34 @@ Tous les champs sont désormais définitifs.
 
 ## Bloc d'accroche / value proposition
 
-> Donnez-lui vos pièces comptables. Il saisit, lettre, justifie et prépare
-> vos déclarations, pour que votre cabinet tienne ses délais sans
-> surcharger vos équipes — et que vos collaborateurs retrouvent du temps
-> pour le conseil et vos clients.
+> Donnez-lui vos pièces comptables. Votre collaborateur IA saisit, lettre,
+> justifie et prépare vos déclarations, pour que votre cabinet tienne ses
+> délais sans surcharger vos équipes — et que vos collaborateurs
+> retrouvent du temps pour le conseil et vos clients.
+
+*(Changement du 18/09 : "Il" seul était ambigu une fois "Claude" retiré du
+texte — plus d'antécédent clair dans ce paragraphe. Remplacé par "Votre
+collaborateur IA" pour lever l'ambiguïté.)*
 
 ## FAQ (accordéon)
 
 1. **Comment ça marche ?**
-   Comptallié devient le collaborateur comptable de votre cabinet. On
-   commence par regarder avec vous vos tâches du quotidien — saisie,
-   lettrage, justification des comptes, préparation des déclarations,
-   relances clients — puis on les met en place une par une, toujours sous
-   le contrôle de votre expert-comptable.
+   Comptallié développe un agent IA capable de faire tout ce que fait
+   aujourd'hui un collaborateur comptable dans un cabinet français :
+   saisir les pièces, lettrer les comptes, justifier les soldes, préparer
+   les déclarations de TVA et les liasses, relancer les clients pour les
+   pièces manquantes. On le construit avec vous, à partir de vos dossiers
+   réels, toujours sous le contrôle de votre expert-comptable.
 
-   *(Changement du 18/09 : plus de mention explicite de "Claude" /
+   *(Changements du 18/09 : (1) plus de mention explicite de "Claude" /
    "Anthropic" sur le site public — nommer la techno sous-jacente donne
    l'impression d'être un intégrateur qui plaque un outil tiers plutôt
-   qu'une startup avec son propre produit. En interne/technique, la
-   techno reste bien Claude via skills/plugins/connecteurs MCP — voir
-   claude.md — seul le texte visiteur change.)*
+   qu'une startup avec son propre produit ; la techno reste bien Claude en
+   interne, voir claude.md, seul le texte visiteur change. (2) Réponse
+   réécrite pour vendre la vision de façon concrète — l'ambition n'est
+   pas juste "on automatise quelques tâches", c'est un agent capable de
+   tout ce que fait un collaborateur comptable aujourd'hui, avec une
+   liste de tâches réelles et précises plutôt qu'une formulation vague.)*
 
 2. **Quelles tâches sont automatisées aujourd'hui ?**
    Nous sommes encore en tout début de lancement, avec une poignée de

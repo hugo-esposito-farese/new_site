@@ -41,9 +41,11 @@ export function Faq() {
               </svg>
             </button>
             {isOpen && (
-              <p className="pb-5 font-sans text-sm leading-relaxed text-ink/80 sm:text-base">
-                {item.answer}
-              </p>
+              <div className="flex flex-col gap-3 pb-5 font-sans text-sm leading-relaxed text-ink/80 sm:text-base">
+                {item.answer.split("\n\n").map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
             )}
           </div>
         );

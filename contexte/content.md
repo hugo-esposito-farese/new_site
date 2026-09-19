@@ -86,11 +86,18 @@ collaborateur IA" pour lever l'ambiguïté.)*
    lors de notre prochaine vague d'onboarding.
 
 5. **Qui est derrière Comptallié ?**
-   On est deux : Méline, spécialisée en économie et stratégie à Sciences
-   Po Paris, et Hugo, comptable de formation et passé par 42 Paris pour se
-   spécialiser en IA agentique. C'est cette combinaison — analyse
-   stratégique et connaissance terrain du métier comptable — qui fait la
-   force du duo.
+   Deux fondateurs, Méline, spécialisée en économie et stratégie à
+   Sciences Po Paris, et Hugo, ingénieur IA et comptable de formation,
+   passé par 42 Paris.
+
+   Nous croyons que l'IA doit permettre aux cabinets comptables de passer
+   moins de temps sur les tâches répétitives et plus de temps sur ce qui
+   compte vraiment : leurs clients et leur métier.
+
+   *(Texte final dicté par l'utilisateur le 19/09 — deux paragraphes :
+   présentation du duo, puis la conviction/vision qui motive le produit.
+   Le composant FAQ (`Faq.tsx`) gère maintenant les réponses multi-
+   paragraphes en séparant sur `\n\n`.)*
 
    *(Changements du 18/09 : on ne présente plus Comptallié comme
    "pré-incubée à Sciences Po Paris" — ce n'est pas l'identité de la

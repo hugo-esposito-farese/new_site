@@ -33,7 +33,7 @@ export const faq = [
   {
     question: "Quand est-ce disponible ?",
     answer:
-      "Nous travaillons actuellement avec une poignée de cabinets early adopters en France pour valider et affiner le produit. Rejoignez la liste d'attente pour faire partie des premiers cabinets accompagnés lors de notre prochaine vague d'onboarding.",
+      "Nous travaillons actuellement avec quelques cabinets comptables français pour construire la solution au plus près de leurs besoins.\n\nNous ouvrons progressivement l'accès à de nouveaux cabinets afin de pouvoir les accompagner personnellement dans les premières étapes.\n\nInscrivez-vous sur la liste d'attente pour faire partie des prochains cabinets accompagnés.",
   },
   {
     question: "Qui est derrière Comptallié ?",

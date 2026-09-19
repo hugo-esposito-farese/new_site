@@ -80,10 +80,18 @@ collaborateur IA" pour lever l'ambiguïté.)*
    confidentialité attendus par la profession comptable française.
 
 4. **Quand est-ce disponible ?**
-   Nous travaillons actuellement avec une poignée de cabinets early
-   adopters en France pour valider et affiner le produit. Rejoignez la
-   liste d'attente pour faire partie des premiers cabinets accompagnés
-   lors de notre prochaine vague d'onboarding.
+   Nous travaillons actuellement avec quelques cabinets comptables
+   français pour construire la solution au plus près de leurs besoins.
+
+   Nous ouvrons progressivement l'accès à de nouveaux cabinets afin de
+   pouvoir les accompagner personnellement dans les premières étapes.
+
+   Inscrivez-vous sur la liste d'attente pour faire partie des prochains
+   cabinets accompagnés.
+
+   *(Texte final dicté par l'utilisateur le 19/09 — trois paragraphes,
+   même mécanisme multi-paragraphes que la réponse "Qui est derrière
+   Comptallié ?".)*
 
 5. **Qui est derrière Comptallié ?**
    Deux fondateurs, Méline, spécialisée en économie et stratégie à

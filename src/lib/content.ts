@@ -12,7 +12,7 @@ export const hero = {
 };
 
 export const valueProp =
-  "Donnez-lui vos pièces comptables. Votre collaborateur IA saisit, lettre, justifie et prépare vos déclarations, pour que votre cabinet tienne ses délais sans surcharger vos équipes — et que vos collaborateurs retrouvent du temps pour le conseil et vos clients.";
+  "Donnez-lui vos pièces comptables. Votre collaborateur IA s'occupe de la comptabilité, pour que vos équipes puissent se concentrer sur le conseil et vos clients.";
 
 export const faq = [
   {

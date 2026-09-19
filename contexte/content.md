@@ -29,14 +29,14 @@ Tous les champs sont désormais définitifs.
 
 ## Bloc d'accroche / value proposition
 
-> Donnez-lui vos pièces comptables. Votre collaborateur IA saisit, lettre,
-> justifie et prépare vos déclarations, pour que votre cabinet tienne ses
-> délais sans surcharger vos équipes — et que vos collaborateurs
-> retrouvent du temps pour le conseil et vos clients.
+> Donnez-lui vos pièces comptables. Votre collaborateur IA s'occupe de la
+> comptabilité, pour que vos équipes puissent se concentrer sur le conseil
+> et vos clients.
 
 *(Changement du 18/09 : "Il" seul était ambigu une fois "Claude" retiré du
 texte — plus d'antécédent clair dans ce paragraphe. Remplacé par "Votre
-collaborateur IA" pour lever l'ambiguïté.)*
+collaborateur IA" pour lever l'ambiguïté. Texte final dicté par
+l'utilisateur le 19/09 — version plus courte et directe.)*
 
 ## FAQ (accordéon)
 

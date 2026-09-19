@@ -18,7 +18,7 @@ export const faq = [
   {
     question: "Comment ça marche ?",
     answer:
-      "Comptallié développe un agent IA capable de faire tout ce que fait aujourd'hui un collaborateur comptable dans un cabinet français : saisir les pièces, lettrer les comptes, justifier les soldes, préparer les déclarations de TVA et les liasses, relancer les clients pour les pièces manquantes. On le construit avec vous, à partir de vos dossiers réels, toujours sous le contrôle de votre expert-comptable.",
+      "Comptallié développe un agent IA capable de faire tout ce que fait aujourd'hui un collaborateur comptable dans un cabinet français : saisir les pièces, lettrer les comptes, justifier les soldes, préparer les déclarations de TVA et les liasses, relancer les clients pour les pièces manquantes. On le construit avec vous, à partir de vos dossiers réels, toujours sous votre contrôle.",
   },
   {
     question: "Quelles tâches sont automatisées aujourd'hui ?",
@@ -38,7 +38,7 @@ export const faq = [
   {
     question: "Qui est derrière Comptallié ?",
     answer:
-      "On est deux : Hugo, comptable de formation et passé par 42 Paris pour se spécialiser en IA agentique, et Méline, à Sciences Po Paris. On connaît le métier comptable de l'intérieur, et on sait construire des agents IA qui tiennent vraiment la route sur le terrain.",
+      "On est deux : Méline, spécialisée en économie et stratégie à Sciences Po Paris, et Hugo, comptable de formation et passé par 42 Paris pour se spécialiser en IA agentique. C'est cette combinaison — analyse stratégique et connaissance terrain du métier comptable — qui fait la force du duo.",
   },
 ];
 

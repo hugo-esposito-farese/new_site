@@ -46,7 +46,7 @@ collaborateur IA" pour lever l'ambiguïté.)*
    saisir les pièces, lettrer les comptes, justifier les soldes, préparer
    les déclarations de TVA et les liasses, relancer les clients pour les
    pièces manquantes. On le construit avec vous, à partir de vos dossiers
-   réels, toujours sous le contrôle de votre expert-comptable.
+   réels, toujours sous votre contrôle.
 
    *(Changements du 18/09 : (1) plus de mention explicite de "Claude" /
    "Anthropic" sur le site public — nommer la techno sous-jacente donne
@@ -56,7 +56,10 @@ collaborateur IA" pour lever l'ambiguïté.)*
    réécrite pour vendre la vision de façon concrète — l'ambition n'est
    pas juste "on automatise quelques tâches", c'est un agent capable de
    tout ce que fait un collaborateur comptable aujourd'hui, avec une
-   liste de tâches réelles et précises plutôt qu'une formulation vague.)*
+   liste de tâches réelles et précises plutôt qu'une formulation vague.
+   (3) "sous le contrôle de votre expert-comptable" → "sous votre
+   contrôle" : la landing page s'adresse justement à l'expert-comptable
+   qui la lit, le tour à la 3e personne était bizarre.)*
 
 2. **Quelles tâches sont automatisées aujourd'hui ?**
    Nous sommes encore en tout début de lancement, avec une poignée de
@@ -83,19 +86,27 @@ collaborateur IA" pour lever l'ambiguïté.)*
    lors de notre prochaine vague d'onboarding.
 
 5. **Qui est derrière Comptallié ?**
-   On est deux : Hugo, comptable de formation et passé par 42 Paris pour se
-   spécialiser en IA agentique, et Méline, à Sciences Po Paris. On connaît
-   le métier comptable de l'intérieur, et on sait construire des agents IA
-   qui tiennent vraiment la route sur le terrain.
+   On est deux : Méline, spécialisée en économie et stratégie à Sciences
+   Po Paris, et Hugo, comptable de formation et passé par 42 Paris pour se
+   spécialiser en IA agentique. C'est cette combinaison — analyse
+   stratégique et connaissance terrain du métier comptable — qui fait la
+   force du duo.
 
-   *(Changement du 18/09 : on ne présente plus Comptallié comme
+   *(Changements du 18/09 : on ne présente plus Comptallié comme
    "pré-incubée à Sciences Po Paris" — ce n'est pas l'identité de la
    startup, seulement le parcours d'une des deux fondatrices. Texte
    volontairement simple/court, sur le modèle des réponses FAQ de la
    référence — pas un CV. Ne pas mentionner Forvis Mazars : Hugo n'y
    travaille plus. Le badge footer "Pré-incubée à Sciences Po Paris" reste
    inchangé pour l'instant — l'utilisateur sait qu'il faudra itérer dessus,
-   à traiter dans un prochain prompt.)*
+   à traiter dans un prochain prompt. Re-rédigé le 19/09 : la v1 mettait
+   Hugo en avant et réduisait Méline à "à Sciences Po Paris" sans
+   substance — déséquilibré et bizarre puisqu'elle lit potentiellement la
+   page elle-même. Nouvelle version : présentation équilibrée des deux
+   fondateurs (spécialisation de Méline précisée : économie et stratégie),
+   et explication explicite de la pertinence du duo — pourquoi le mix de
+   compétences (stratégie + métier comptable/tech) est un atout, pas
+   juste une liste de CV.)*
 
 CTA après la FAQ : `Rejoindre la liste d'attente →` (identique au bouton du
 hero).
